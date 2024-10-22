@@ -29,10 +29,15 @@ def reset():
     turtle.pendown()
 
 
+def close():
+    screen.bye()
+
+
 screen.listen()
 screen.onkeypress(go_forward, "w")
 screen.onkeypress(go_backward, "s")
 screen.onkeypress(turn_left, "a")
 screen.onkeypress(turn_right, "d")
 screen.onkeypress(reset, "c")
+screen.onkeypress(close, "Escape")
 screen.exitonclick()
